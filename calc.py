@@ -3,8 +3,17 @@
 
 # Vamos a programar una calculadora
 
+import sys
+
 def main():
     pass
 
+def suma(x,y):
+	return x+y
+
+
 if __name__ == "__main__":
-    main()
+	sum1 = sys.argv[1]
+	sum2 = sys.argv[2]
+    print (suma(sum1,sum2))
+	

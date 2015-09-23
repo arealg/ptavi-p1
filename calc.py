@@ -9,7 +9,7 @@ def suma(x,y):
 	return x+y
 
 def resta(x,y):
-    return x-y
+	return x-y
 
 sum1 = sys.argv[1]
 sum2 = sys.argv[3]
@@ -20,7 +20,7 @@ def find_float(sumando):
 		return float(sumando)
 	else:
 		return int(sumando)
-
+		
 try:
 	numero1 = find_float(sum1)
 	numero2 = find_float(sum2)

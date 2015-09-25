@@ -9,6 +9,11 @@ import sys
 def suma(x, y):
 	return x+y
 
+<<<<<<< HEAD
+=======
+def resta(x,y):
+	return x-y
+>>>>>>> 5eb1d361986624b93373117f871bdedce3f96dc0
 
 def resta(x, y):
 	return x-y
@@ -19,6 +24,7 @@ def find_float(sumando):
 		return float(sumando)
 	else:
 		return int(sumando)
+<<<<<<< HEAD
 
 if __name__ == '__main__':
 
@@ -29,6 +35,12 @@ if __name__ == '__main__':
 	try:
 		numero1 = find_float(sum1)
 		numero2 = find_float(sum2)
+=======
+		
+try:
+	numero1 = find_float(sum1)
+	numero2 = find_float(sum2)
+>>>>>>> 5eb1d361986624b93373117f871bdedce3f96dc0
 
 		if operacion == 'suma':
 			print(suma(numero1, numero2))

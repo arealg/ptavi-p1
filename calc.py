@@ -21,6 +21,15 @@ def find_float(sumando):
 		return int(sumando)
 
 
+def operacion_valida (operacion, numero1, numero2):
+	if operacion == 'suma':
+		print(suma(numero1, numero2))
+	elif operacion == 'resta':
+		print(resta(numero1, numero2))
+	else:
+		print('Non operation parameters')
+
+
 if __name__ == '__main__':
 
 	sum1 = sys.argv[1]
@@ -30,11 +39,7 @@ if __name__ == '__main__':
 	try:
 		numero1 = find_float(sum1)
 		numero2 = find_float(sum2)
-
-		if operacion == 'suma':
-			print(suma(numero1, numero2))
-		elif operacion == 'resta':
-			print(resta(numero1, numero2))
-
 	except:
 		print ('Error: Non numerical parameters')
+
+	operacion_valida(operacion, numero1, numero2)
